@@ -2,11 +2,33 @@
 <html lang="es-MX">
 	<head>
 		<meta chsrset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"> 
 		<title>Menu Responsive</title>
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/estilos.css">
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	</head>
 	<body>
-		<h1>Hola mudo</h1>
+		<!-- copiado de https://youtu.be/XZsuI5wyRzs -->
+		<nav>
+			<div class="toggle">
+				<i class="fa fa-bars menu" aria-hidden="true"></i>
+			</div>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Portafolio</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+		<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('.menu').click(function(){
+					$('ul').toggleClass('active');
+				})
+			})
+		</script>
 	</body>
 </html>
